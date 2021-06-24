@@ -14,9 +14,9 @@ button.addEventListener('click', function() {
 
     cityName.innerHTML = nameValue;
     description.innerHTML = "Desc - "+descValue;
-    temp.innerHTML = "Temp - "+ (tempValue - 273.15).toFixed(1);
-    input.value ="";
+    temp.innerHTML = "Temp - "+(tempValue - 273.15).toFixed(1);
+    inputValue.value ="";
 })
 
-.catch(err => alert("Wrong"));
+.catch(() => alert("Wrong"));
 })
